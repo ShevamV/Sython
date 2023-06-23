@@ -14,7 +14,7 @@ while True:
     result, error = pythowo.run("<stdin>", text)
     
     if text.strip() == "s.example":
-	print("")
+	printr("")
 	print("Here is an example to coding Sython...")
 	print("type('hello world')")
 	print("hello world")
