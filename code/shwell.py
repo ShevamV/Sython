@@ -26,6 +26,7 @@ while True:
     if text.strip() == "about" or "ShevamV Code" or "S_Code":
         print()
         print("ShevamV Code Language (SCL)")
+        print("Version Py3 0.1, SystoCode 01")
         print()
         print("© Pythowo, Viraj Dasani")
         print("UWU Programming langauge")
