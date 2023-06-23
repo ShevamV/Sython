@@ -13,7 +13,7 @@ while True:
         continue
     result, error = pythowo.run("<stdin>", text)
     
-    if text.strip() == "s.example":
+    if text.strip() == "help" or "example":
 	printr("")
 	print("Here is an example to coding Sython...")
 	print("type('hello world')")
@@ -22,6 +22,20 @@ while True:
  	print("1000 + 922")
 	print("1922")
 	continue
+
+    if text.strip() == "about" or "ShevamV Code" or "S_Code":
+        print()
+        print("ShevamV Code Language (SCL)")
+        print()
+        print("© Pythowo, Viraj Dasani")
+        print("UWU Programming langauge")
+        print()
+        print("E-mail")
+        print("Vermans.svr@gmail.com")
+        print()
+        print("Website")
+        print("https://ShevamV-Website.web.app")
+        continue
     
     if error:
         print(error.as_string())
