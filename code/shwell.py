@@ -27,4 +27,19 @@ if text.strip() == "about":
     print("ShevamV Coding Language(SCL)")
     print("")
     print("© Pythowo, Viraj Dasani")
-    print("UWU ")
+    print("UWU programming language")
+    print("")
+    print("E-mail")
+    print("vermans.svr@gmail.com")
+    print("Website")
+    print("https://shevamv-website.web.app")
+    continue
+
+if error:
+    print(error.as_string())
+
+elif result:
+    if len(result.elements) == 1
+       print(repr(result.elements[0]))
+    else:
+       print(repr(result))
