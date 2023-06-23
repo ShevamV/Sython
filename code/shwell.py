@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 import os
 import pythowo
 
@@ -14,30 +13,29 @@ while True:
     result, error = pythowo.run("<stdin>", text)
     
     if text.strip() == "help":
-	print("")
-	print("Here is an example to coding Sython...")
-	print("type('hello world')")
-	print("hello world")
-	print("")
- 	print("1000 + 922")
-	print("1922")
-	continue
-
+    	print("")
+    	print("Here is an example to coding Sython...")
+    	print("type('hello world')")
+    	print("hello world")
+    	print("")
+    	print("1000 + 922")
+    	print("1922")
+    	continue
+    	
     if text.strip() == "about":
         print()
-        print("ShevamV Code Language (SCL)")
-        print("Version Py3 0.1, SystoCode 01")
+        print("ShevamV-Code-Language(SCL)")
         print()
-        print("© Pythowo, Viraj Dasani")
-        print("UWU Programming langauge")
+        print("©Pythowo, Viraj Dasani")
+        print("UWU Langauge")
         print()
         print("E-mail")
         print("Vermans.svr@gmail.com")
-        print()
-        print("Website")
-        print("https://ShevamV-Website.web.app")
+        print("")
+        print("website")
+        print("https://shevamv-website.web.aop")
         continue
-    
+        
     if error:
         print(error.as_string())
     elif result:
