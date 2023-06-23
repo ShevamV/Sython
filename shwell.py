@@ -14,14 +14,14 @@ while True:
     result, error = pythowo.run("<stdin>", text)
     
     if text.strip() == "s.example":
-    	print("")
-    	print("Here is an example to coding Sython...")
-    	print("type('hello world')")
-    	print("hello world")
-    	print("")
-    	print("1000 + 922")
-    	print("1922")
-    	continue
+	print("")
+	print("Here is an example to coding Sython...")
+	print("type('hello world')")
+	print("hello world")
+	print("")
+ 	print("1000 + 922")
+	print("1922")
+	continue
     
     if error:
         print(error.as_string())
