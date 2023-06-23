@@ -13,8 +13,8 @@ while True:
         continue
     result, error = pythowo.run("<stdin>", text)
     
-    if text.strip() == "help" or "example":
-	printr("")
+    if text.strip() == "help":
+	print("")
 	print("Here is an example to coding Sython...")
 	print("type('hello world')")
 	print("hello world")
@@ -23,7 +23,7 @@ while True:
 	print("1922")
 	continue
 
-    if text.strip() == "about" or "ShevamV Code" or "S_Code":
+    if text.strip() == "about":
         print()
         print("ShevamV Code Language (SCL)")
         print("Version Py3 0.1, SystoCode 01")

@@ -2,8 +2,8 @@
 pwint("Enter thew nuwumber: ")
 pwease nuwu = inpwt_int()
 
-# FWUNCTION to Cawlcuwate Fwactorial
-FWUNCTION uwu(nuwu) -> IF nuwu < 0 THWEN WETURN EWIF nuwu <= 1 THWEN WETURN 1 EWSE WETURN nuwu*uwu(nuwu-1)
+# FUNCTION to Cawlcuwate Fwactorial
+FUNCTION uwu(nuwu) -> IF nuwu < 0 THWEN WETURN ELIF nuwu <= 1 THWEN WETURN 1 ELSE WETURN nuwu*uwu(nuwu-1)
 
 # Pwint the Awnswuw
 pwease nwani = uwu(nuwu)

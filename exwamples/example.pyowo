@@ -12,7 +12,7 @@ pwint(chan)
 
 
 # Conditiwonals
-IF awoo == 502 THWEN pwease chan = "awoo is 502!" EWIF awoo == 501 THWEN pwease chan = "awoo is 501!" EWSE pwease chan = "awoo is 500!"
+IF awoo == 502 THWEN pwease chan = "awoo is 502!" ELIF awoo == 501 THWEN pwease chan = "awoo is 501!" ELSE pwease chan = "awoo is 500!"
 
 pwint(chan)
 

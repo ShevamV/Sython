@@ -155,8 +155,8 @@ KEYWORDS = [
     "OR",
     "NOT",
     "IF",
-    "EWIF",
-    "EWSE",
+    "ELIF",
+    "ELSE",
     "FOR",
     "TO",
     "STWEP",
@@ -1005,13 +1005,13 @@ class Parser:
         return res.success(IfNode(cases, else_case))
 
     def if_expr_b(self):
-        return self.if_expr_cases("EWIF")
+        return self.if_expr_cases("ELIF")
 
     def if_expr_c(self):
         res = ParseResult()
         else_case = None
 
-        if self.current_tok.matches(TT_KEYWORD, "EWSE"):
+        if self.current_tok.matches(TT_KEYWORD, "ELSE"):
             res.register_advancement()
             self.advance()
 
@@ -1047,7 +1047,7 @@ class Parser:
         res = ParseResult()
         cases, else_case = [], None
 
-        if self.current_tok.matches(TT_KEYWORD, "EWIF"):
+        if self.current_tok.matches(TT_KEYWORD, "ELIF"):
             all_cases = res.register(self.if_expr_b())
             if res.error:
                 return res
@@ -2551,8 +2551,8 @@ global_symbol_table.set("true", Number.true)
 global_symbol_table.set("math_pi", Number.math_PI)
 global_symbol_table.set("type", BuiltInFunction.print)
 global_symbol_table.set("type_ret", BuiltInFunction.print_ret)
-global_symbol_table.set("textbx", BuiltInFunction.input)
-global_symbol_table.set("textbx_int", BuiltInFunction.input_int)
+global_symbol_table.set("txtbx", BuiltInFunction.input)
+global_symbol_table.set("txtbx_int", BuiltInFunction.input_int)
 global_symbol_table.set("clear", BuiltInFunction.clear)
 global_symbol_table.set("cls", BuiltInFunction.clear)
 global_symbol_table.set("is_123", BuiltInFunction.is_number)

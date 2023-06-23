@@ -80,13 +80,13 @@ pwint(chan)
 ```
 
 <h3 align="center">Conditionals</h3>
-<p align="center">IF《condition》THWEN《expression》EWIF《condition》THWEN《expression》</p>
+<p align="center">IF《condition》THWEN《expression》ELIF《condition》THWEN《expression》</p>
 
 ```py
 pwease tehe = 501
 
-IF tehe == 502 THWEN pwease chan = "tehe is 502!" EWIF tehe == 501 THWEN pwease chan = "
-is 501!" EWSE pwease chan = "tehe is 500!"
+IF tehe == 502 THWEN pwease chan = "tehe is 502!" ELIF tehe == 501 THWEN pwease chan = "
+is 501!" ELSE pwease chan = "tehe is 500!"
 
 pwint(chan)
 ```
@@ -118,7 +118,7 @@ UwU
 <h3 align="center">Functions</h3>
 
 ```py
-FWUNCTION owofy(pwefix) -> pwefix + "OwO"
+FUNCTION owofy(pwefix) -> pwefix + "OwO"
 
 pwint(owofy("This is pyth"))
 ```

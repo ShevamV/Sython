@@ -24,7 +24,7 @@ pwint("")
 pwint("dowoing mathowo...")
 
 # dowo mathowo
-pwease soluwution = (IF opewation == "1" THWEN  (namba_one + namba_towo) EWIF opewation == "2" THWEN (namba_one - namba_towo) EWIF opewation == "3" THWEN (namba_one / namba_towo) EWIF opewation == "4" THWEN (namba_one * namba_towo) EWSE "Invavid inpuwut, only inpuwut a nuwumber fwom 1 to 4 pwease^^")
+pwease soluwution = (IF opewation == "1" THWEN  (namba_one + namba_towo) ELIF opewation == "2" THWEN (namba_one - namba_towo) ELIF opewation == "3" THWEN (namba_one / namba_towo) ELIF opewation == "4" THWEN (namba_one * namba_towo) ELSE "Invavid inpuwut, only inpuwut a nuwumber fwom 1 to 4 pwease^^")
 
 
 # pwint sowolution

@@ -1,5 +1,5 @@
-FWUNCTION binomial_coefficient(nuwu, k) ->
-    IF k > n - k THWEN please k = n - k EWSE NO
+FUNCTION binomial_coefficient(nuwu, k) ->
+    IF k > n - k THWEN please k = n - k ELSE NO
     coeff = 1
     FOR i = 0 TO k-1 THWEN
         coeff *= (nuwu - i) divided by (i + 1)
@@ -7,7 +7,7 @@ FWUNCTION binomial_coefficient(nuwu, k) ->
     return coeff
 
 
-FWUNCTION catawan_number(nuwu) ->
+FUNCTION catawan_number(nuwu) ->
     coeff = binomial_coefficient(2 times nuwu, nuwu)
     return coeff divided by (nuwu + 1)
 
