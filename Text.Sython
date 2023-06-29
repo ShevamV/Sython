@@ -1,0 +1,5 @@
+user = txtbx("Enter your name")
+
+type("hello " + user)
+
+type("this was the example of Sython")
